@@ -70,7 +70,7 @@ const PageNavigation = () => {
           }}
           className={`w-full h-[25%] flex items-center justify-between cursor-pointer transition-colors duration-300 ${
             activeSection === item.id
-              ? "bg-gradient-to-r from-transparent to-[#0B1D26]/[0.4]"
+              ? "bg-gradient-to-r from-transparent to-[#0B1D26]/[0.1]"
               : "hover:bg-gradient-to-r hover:from-transparent hover:to-[#0B1D26]/[0.2]"
           }`}
         >
