@@ -15,27 +15,33 @@ const Header = () => {
         MNTN
       </Link>
 
-      {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-14 font-bold">
-        <Link to="/equipment" className="hover-effect hover:mb-2">
+        <Link
+          to="/equipment"
+          className="cursor-pointer hover:text-[var(--text-color)] hover:mb-2 transition-all duration-300 ease-in-out"
+        >
           Equipment
         </Link>
-        <Link to="/about-us" className="hover-effect hover:mb-2">
+        <Link
+          to="/about-us"
+          className="cursor-pointer hover:text-[var(--text-color)] hover:mb-2 transition-all duration-300 ease-in-out"
+        >
           About us
         </Link>
-        <Link to="/blog" className="hover-effect hover:mb-2">
+        <Link
+          to="/blog"
+          className="cursor-pointer hover:text-[var(--text-color)] hover:mb-2 transition-all duration-300 ease-in-out"
+        >
           Blog
         </Link>
       </div>
 
-      {/* Mobile Menu Button and Account */}
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2 cursor-pointer hover:text-[var(--text-color)] transition-all duration-300 ease-in-out">
           <HiOutlineUserCircle className="size-6" />
           <p className="font-semibold hidden md:block">Account</p>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <button
           onClick={toggleMenu}
           className="md:hidden focus:outline-none"
@@ -49,7 +55,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="absolute top-28 right-6 md:hidden bg-[#0B1D26] rounded-lg shadow-lg py-4 px-6 z-50 w-48">
           <div className="flex flex-col gap-4 font-bold">
