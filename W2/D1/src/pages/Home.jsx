@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import SocialMedia from "../components/SocialMedia";
 import PageNavigation from "../components/PageNavigation";
 import Hero from "../components/Hero";

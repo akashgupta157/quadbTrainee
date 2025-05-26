@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Inter", sans-serif;
+}
+.text-gradient {
+  background: linear-gradient(to right, #f5e942, #00ffcc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Playfair Display", serif;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.text-outline {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 6s linear infinite;
+}
+
+.line-circle {
+  transition: all 0.1s ease-out;
+}
+
+path {
+  transition: stroke-dashoffset 0.5s ease-out;
+}
