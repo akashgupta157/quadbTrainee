@@ -30,9 +30,23 @@ export default function Line() {
         circle.setAttribute("cx", point.x);
         circle.setAttribute("cy", point.y);
 
-        if (progress > 0.1) controls1.start("visible");
-        if (progress > 0.4) controls2.start("visible");
-        if (progress > 0.7) controls3.start("visible");
+        if (progress > 0.1 && progress < 0.4) {
+          controls1.start("visible");
+          controls2.start("hidden");
+          controls3.start("hidden");
+        } else if (progress > 0.4 && progress < 0.7) {
+          controls1.start("visible");
+          controls2.start("visible");
+          controls3.start("hidden");
+        } else if (progress > 0.7) {
+          controls1.start("visible");
+          controls2.start("visible");
+          controls3.start("visible");
+        } else {
+          controls1.start("hidden");
+          controls2.start("hidden");
+          controls3.start("hidden");
+        }
       }
     };
 
